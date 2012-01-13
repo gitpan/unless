@@ -1,0 +1,19 @@
+---
+abstract: 'use a Perl module unless a condition holds'
+author:
+  - 'Ilya Zakharevich <ilyaz@cpan.org>'
+  - 'Chris Williams <chris@bingosnet.co.uk>'
+build_requires: {}
+configure_requires:
+  ExtUtils::MakeMaker: 6.30
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.300006, CPAN::Meta::Converter version 2.113640'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: unless
+resources:
+  homepage: https://github.com/bingos/unless
+  repository: https://github.com/bingos/unless.git
+version: 0.02
