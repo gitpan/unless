@@ -1,13 +1,10 @@
 package unless;
-{
-  $unless::VERSION = '0.02';
-}
-
+$unless::VERSION = '0.04';
 #ABSTRACT: use a Perl module unless a condition holds
 
 sub work {
   my $method = shift() ? 'import' : 'unimport';
-  die "Too few arguments to `use unless' (some code returning an empty list in list context?)"
+  die "Too few arguments to 'use unless' (some code returning an empty list in list context?)"
     unless @_ >= 2;
   return if shift;		# CONDITION
 
@@ -23,9 +20,11 @@ sub unimport { shift; unshift @_, 0; goto &work }
 
 q"There must be something wrong with human nature";
 
-
 __END__
+
 =pod
+
+=encoding UTF-8
 
 =head1 NAME
 
@@ -33,7 +32,7 @@ unless - use a Perl module unless a condition holds
 
 =head1 VERSION
 
-version 0.02
+version 0.04
 
 =head1 SYNOPSIS
 
@@ -74,10 +73,9 @@ Chris Williams <chris@bingosnet.co.uk>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2012 by Ilya Zakharevich.
+This software is copyright (c) 2014 by Ilya Zakharevich.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
