@@ -17,4 +17,4 @@ name: unless
 resources:
   homepage: https://github.com/bingos/unless
   repository: https://github.com/bingos/unless.git
-version: '0.04'
+version: '0.06'
